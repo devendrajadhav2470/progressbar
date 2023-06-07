@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  /* justify-content: center; */
+  margin: 50px;
+  align-items: center;
+}
+.balls {
+  width: 18px;
+  display: flex;
+  border: 4px solid #cbd5e1;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 1s ease-out;
+}
+.rods {
+  height: 4px;
+  width: 50px;
+  background-color: #cbd5e1;
+  transition: background-color 1s ease-out;
+  overflow: hidden;
+}
+.bar {
+  width: 0;
+  height: 4px;
+  background-color: #0ea5e9;
+}
+.animationclass {
+  width: 0;
+  height: 4px;
+  background-color: #0ea5e9;
+  animation: hi 1s forwards;
+}
+.removeanimationclass {
+  width: 50px;
+  height: 4px;
+  background-color: #0ea5e9;
+  animation: bye 1s forwards;
+}
+
+@keyframes hi {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50px;
+  }
+}
+
+@keyframes bye {
+  from {
+    width: 50px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.btncontainer {
+  width: 254px;
+  margin: 50px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ball0 {
+  border-color: #0ea5e9;
+}
